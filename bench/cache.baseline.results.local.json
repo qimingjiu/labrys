@@ -1,0 +1,76 @@
+{
+  "node": "v24.22.1",
+  "kind": "Local disk-backed gateway overhead; simulated immediate model; not vendor/network latency",
+  "result": [
+    {
+      "cacheEnabled": false,
+      "measuredRequests": 100,
+      "warmupRequests": 10,
+      "firstTextMs": {
+        "p50": 16.492,
+        "p95": 39.66
+      },
+      "totalMs": {
+        "p50": 18.062,
+        "p95": 42.838
+      },
+      "modelCalls": 110,
+      "cache": {
+        "enabled": false,
+        "providerMode": "automatic",
+        "ttlSeconds": 604800,
+        "limits": {
+          "entries": 256,
+          "bytes": 16777216
+        },
+        "entries": 0,
+        "bytes": 0,
+        "counters": {
+          "history.appended_records": 33000,
+          "provider.requests": 110
+        }
+      }
+    },
+    {
+      "cacheEnabled": true,
+      "measuredRequests": 100,
+      "warmupRequests": 10,
+      "firstTextMs": {
+        "p50": 8.064,
+        "p95": 13.034
+      },
+      "totalMs": {
+        "p50": 9.629,
+        "p95": 14.921
+      },
+      "modelCalls": 110,
+      "cache": {
+        "enabled": true,
+        "providerMode": "automatic",
+        "ttlSeconds": 604800,
+        "limits": {
+          "entries": 256,
+          "bytes": 16777216
+        },
+        "entries": 4,
+        "bytes": 152758,
+        "counters": {
+          "prefix.misses": 1,
+          "prefix.writes": 1,
+          "memory.misses": 1,
+          "memory.writes": 1,
+          "handoff.misses": 1,
+          "handoff.writes": 1,
+          "history.misses": 1,
+          "history.writes": 110,
+          "history.appended_records": 518,
+          "provider.requests": 110,
+          "prefix.hits": 109,
+          "memory.hits": 109,
+          "handoff.hits": 109,
+          "history.hits": 109
+        }
+      }
+    }
+  ]
+}

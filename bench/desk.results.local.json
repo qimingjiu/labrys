@@ -1,0 +1,38 @@
+{
+  "node": "v24.22.1",
+  "date": "2026-11-04T14:30:16.871Z",
+  "scope": "Disk SQLite, 150 initial turns, five client labels, immediate in-process model. Healthy foreground requests; world/desk enabled but no active background jobs. No HTTP, prompt processing, actual model, vendor cache or network wait.",
+  "results": [
+    {
+      "worldEnabled": false,
+      "measured": 100,
+      "warmup": 10,
+      "modelCalls": 110,
+      "toolCount": 9,
+      "firstTextMs": {
+        "p50": 14.36,
+        "p95": 46.812
+      },
+      "totalMs": {
+        "p50": 17.691,
+        "p95": 52.911
+      }
+    },
+    {
+      "worldEnabled": true,
+      "measured": 100,
+      "warmup": 10,
+      "modelCalls": 110,
+      "toolCount": 43,
+      "firstTextMs": {
+        "p50": 31.989,
+        "p95": 89.075
+      },
+      "totalMs": {
+        "p50": 38.389,
+        "p95": 100.112
+      }
+    }
+  ],
+  "developmentSnapshot": "0.7.0"
+}

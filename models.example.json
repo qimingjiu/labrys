@@ -1,0 +1,17 @@
+{
+  "providers": [
+    { "id": "primary", "name": "主服务商", "baseURL": "https://your-provider.example/v1", "keyRef": "primary-key" },
+    { "id": "backup", "name": "备用服务商", "baseURL": "https://your-backup.example/v1", "keyRef": "backup-key" }
+  ],
+  "routes": [
+    { "id": "main", "providerId": "primary", "model": "your-real-primary-model-id", "name": "主模型", "aliases": ["主模型"], "capabilities": { "tools": true, "vision": true } },
+    { "id": "backup", "providerId": "backup", "model": "your-real-backup-model-id", "name": "备用模型", "aliases": ["备用模型"], "capabilities": { "tools": true, "vision": true } }
+  ],
+  "defaultRouteId": "main",
+  "fallbackRouteIds": ["backup", "main"],
+  "maxAttempts": 3,
+  "firstTokenTimeoutMs": 12000,
+  "attemptTimeoutMs": 45000,
+  "totalTimeoutMs": 60000,
+  "cooldownSeconds": 60
+}

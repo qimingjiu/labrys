@@ -1,0 +1,17 @@
+{
+  "defaultAgentId": "korax",
+  "maxContextCharacters": 60000,
+  "cache": { "enabled": true, "ttlSeconds": 604800, "maxEntries": 256, "maxBytes": 16777216, "providerMode": "automatic" },
+  "agents": [
+    {
+      "id": "korax", "name": "κόραξ", "aliases": ["κόραξ", "korax", "乌鸦"],
+      "persona": "你是 κόραξ，家庭中的一个独立成员。用自然、简洁的中文交流。尊重用户的当前选择。你被换下时，保留自己的经历；再次回来时可以记得换人的原因。其他成员的发言属于他们，不要冒认。",
+      "model": ""
+    },
+    {
+      "id": "kirishima", "name": "雾岛纪", "aliases": ["雾岛纪", "kirishima"],
+      "persona": "你是雾岛纪，家庭中的一个独立成员。这是可编辑的初始人设，具体性格由用户设定。你接话时读取交接记录，自然延续当前话题。尊重其他成员，各自的经历保留作者身份。",
+      "model": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "node": "v24.22.1",
+  "date": "2026-11-04T12:58:54.835Z",
+  "scope": "Disk-backed SQLite + immediate in-process model; no HTTP/vendor/network latency. Same 150 initial turns and five client labels in each mode. Healthy requests only.",
+  "results": [
+    {
+      "routing": false,
+      "measured": 100,
+      "warmup": 10,
+      "modelCalls": 110,
+      "firstTextMs": {
+        "p50": 10.801,
+        "p95": 18.674
+      },
+      "totalMs": {
+        "p50": 12.887,
+        "p95": 25.788
+      },
+      "retrievalMs": {
+        "p50": 2.484,
+        "p95": 4.178
+      }
+    },
+    {
+      "routing": true,
+      "measured": 100,
+      "warmup": 10,
+      "modelCalls": 110,
+      "firstTextMs": {
+        "p50": 10.284,
+        "p95": 16.449
+      },
+      "totalMs": {
+        "p50": 12.319,
+        "p95": 18.779
+      },
+      "retrievalMs": {
+        "p50": 2.346,
+        "p95": 4.468
+      }
+    }
+  ],
+  "developmentSnapshot": "0.6.0"
+}

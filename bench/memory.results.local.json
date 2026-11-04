@@ -1,0 +1,137 @@
+{
+  "node": "v24.22.1",
+  "date": "2026-11-04T11:54:27.154Z",
+  "scope": "Local disk-backed SQLite; 608 authored memories + 4017 initial events; immediate mock model; no vendor/network latency.",
+  "evaluation": {
+    "kind": "Eight hand-authored old-evidence regression cases with synthetic distractors; not a held-out or public memory benchmark; not an answer-quality score.",
+    "cases": [
+      {
+        "query": "毕业论文的实验数据放哪个数据库？",
+        "visibility": "shared",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      },
+      {
+        "query": "乌鸦周五答应核对什么？",
+        "visibility": "shared",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      },
+      {
+        "query": "夜间直播结束时的暗号是什么？",
+        "visibility": "private",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      },
+      {
+        "query": "采编部迎新摄影谁来做？",
+        "visibility": "shared",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      },
+      {
+        "query": "论文的原始访谈保存在哪里？",
+        "visibility": "shared",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      },
+      {
+        "query": "之前换人为什么和文件附件有关？",
+        "visibility": "shared",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      },
+      {
+        "query": "那次唱歌练习选了哪首曲子？",
+        "visibility": "shared",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      },
+      {
+        "query": "为什么改用周六直播？",
+        "visibility": "shared",
+        "latest20ContainsGold": false,
+        "recallAt8ContainsGold": true,
+        "rawEvidenceContainsGold": true
+      }
+    ]
+  },
+  "retrievalOnly": {
+    "uncached": {
+      "p50": 3.611,
+      "p95": 6.666
+    },
+    "warmCache": {
+      "p50": 2.339,
+      "p95": 4.764
+    },
+    "samplesPerMode": 120
+  },
+  "gateway": {
+    "warmup": 10,
+    "measured": 100,
+    "firstTextMs": {
+      "p50": 13.655,
+      "p95": 22.46
+    },
+    "totalMs": {
+      "p50": 15.682,
+      "p95": 26.542
+    },
+    "retrievalMs": {
+      "p50": 2.931,
+      "p95": 5.94
+    },
+    "queryCacheHits": 100,
+    "modelCalls": 110,
+    "maxPromptCharacters": 55609
+  },
+  "index": {
+    "version": "lexical-turns-v1",
+    "mode": "lexical",
+    "ready": true,
+    "error": null,
+    "documents": 4845
+  },
+  "cache": {
+    "enabled": true,
+    "providerMode": "automatic",
+    "ttlSeconds": 604800,
+    "limits": {
+      "entries": 256,
+      "bytes": 16777216
+    },
+    "entries": 130,
+    "bytes": 120443,
+    "counters": {
+      "recall.misses": 8,
+      "recall.writes": 8,
+      "evidence.misses": 118,
+      "evidence.writes": 118,
+      "recall.hits": 342,
+      "evidence.hits": 232,
+      "prefix.misses": 1,
+      "prefix.writes": 1,
+      "memory.misses": 1,
+      "memory.writes": 1,
+      "handoff.misses": 1,
+      "handoff.writes": 1,
+      "history.misses": 1,
+      "history.writes": 110,
+      "history.appended_records": 518,
+      "provider.requests": 110,
+      "prefix.hits": 109,
+      "memory.hits": 109,
+      "handoff.hits": 109,
+      "history.hits": 109
+    }
+  },
+  "developmentSnapshot": "0.5.0"
+}

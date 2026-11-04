@@ -1,0 +1,17 @@
+{
+  "accounts": [
+    { "id": "qq", "platform": "onebot", "baseUrl": "http://127.0.0.1:3000", "ownerIds": ["10000001"], "tokenRef": "qq-token", "webhookSecretRef": "qq-hook", "inbound": false, "providerFileRoot": "/shared/outgoing" },
+    { "id": "dc", "platform": "discord", "ownerIds": ["000000000000000001"], "tokenRef": "dc-token", "inbound": false },
+    { "id": "tg", "platform": "telegram", "ownerIds": ["10000002"], "tokenRef": "tg-token", "inbound": false },
+    { "id": "wechat", "platform": "openclaw", "baseUrl": "http://127.0.0.1:18789", "ownerIds": ["your-weixin-sender-id"], "tokenRef": "openclaw-token", "webhookSecretRef": "wechat-bridge-secret", "inbound": false, "channel": "openclaw-weixin" },
+    { "id": "client", "platform": "client", "ownerIds": [] }
+  ],
+  "destinations": [
+    { "id": "qq-home", "aliases": ["QQ"], "accountId": "qq", "roomId": "family", "target": { "userId": "10000001" }, "capabilities": ["text", "file", "image", "voice"], "maxBytes": 8388608 },
+    { "id": "dc-home", "aliases": ["dc", "Discord"], "accountId": "dc", "roomId": "family", "target": { "channelId": "000000000000000002" }, "capabilities": ["text", "file", "image", "voice"], "maxBytes": 8388608 },
+    { "id": "tg-home", "aliases": ["tg", "Telegram"], "accountId": "tg", "roomId": "family", "target": { "chatId": "10000002" }, "capabilities": ["text", "file", "image", "voice"], "maxBytes": 26214400 },
+    { "id": "wechat-home", "aliases": ["微信"], "accountId": "wechat", "roomId": "family", "target": { "userId": "your-weixin-recipient-id" }, "capabilities": ["text", "file", "image"], "maxBytes": 8388608 },
+    { "id": "client-inbox", "aliases": ["客户端收件箱"], "accountId": "client", "roomId": "family", "target": {}, "capabilities": ["text", "file", "image", "voice"], "maxBytes": 26214400 }
+  ],
+  "quietHours": { "start": 23, "end": 8, "timeZone": "Asia/Shanghai" }
+}

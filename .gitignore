@@ -1,0 +1,20 @@
+node_modules/
+data/
+.env
+config.local.json
+channels.local.json
+models.local.json
+*.log
+
+# Local credentials, generated state and exports
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key
+*.zip
+coverage/
+.DS_Store

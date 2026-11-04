@@ -1,0 +1,32 @@
+{
+  "name": "labrys",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.ts",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "bench": "node bench/cache.ts",
+    "bench:memory": "node bench/memory.ts",
+    "bench:models": "node bench/models.ts",
+    "bench:desk": "node bench/desk.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  },
+  "description": "λάβρυς · 家庭多 Agent 网关、跨端工具箱与 IDE 收纳组件",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qimingjiu/labrys.git"
+  },
+  "homepage": "https://github.com/qimingjiu/labrys#readme",
+  "bugs": {
+    "url": "https://github.com/qimingjiu/labrys/issues"
+  }
+}
